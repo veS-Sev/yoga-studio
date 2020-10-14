@@ -1,0 +1,17 @@
+// цвета для фонов
+$blue:#7492ec;
+$lblue:#dfe5f2;
+$lblue2:#dae1f2;
+$lgray:#f1f3f8;
+$dgray:#333333;
+$black:#181818;
+
+// цвета для текста
+$text:#666666;
+$tblue:#99aade;
+$ultrablue:#4c77eb;
+
+@mixin w100 {
+  max-width: 100%;
+  width: 100%;
+}
