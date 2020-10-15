@@ -2,8 +2,7 @@
   background-color:$lblue;
   color:$tblue;
   font-family: "Poppins-Bold",sans-serif;
- 
-}
+ }
 .header__container {
   display:flex;
   align-items: center;
@@ -23,7 +22,7 @@
 .header__logo-text {
   margin-left: 10px;
   font-size: 1.5em;
-  
+  color:$ultrablue;
 }
 .header__navigation-wrap {
   display:flex;
@@ -32,9 +31,6 @@ width: 100%;
 align-items: center;
 justify-content: flex-end;
 }
-.header__navigation-list {
-
-}
 .header__navigation-item {
   display: inline;
 }
@@ -42,7 +38,6 @@ justify-content: flex-end;
 .header__navigation-item {
   margin-left:25px;
 }
-
 .header__navigation-link.active{
 color:$ultrablue;
 }

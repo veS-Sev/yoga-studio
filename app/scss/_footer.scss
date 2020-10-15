@@ -3,14 +3,9 @@
   font-size: 13px;
   color:#bbb;
 }
-.contaner {
-}
 .footer__wrap {
   background-color:$black;
   @include w100;
-}
-.footer__subscribe-wrap{
-
 }
 .footer__subscribe {
    display:flex;
@@ -28,10 +23,7 @@
 }
 .footer__logo-text {
   @extend .header__logo-text;
-  color:$ultrablue;
-  font-family: "Poppins-Bold",sans-serif;
-}
-.footer__subscribe-text {
+   font-family: "Poppins-Bold",sans-serif;
 }
 .footer__subscribe-title {
   text-transform: uppercase;
@@ -60,8 +52,7 @@
   background-color:$dgray;
   max-width: 300px;
   padding:0 20px;
-  
- }
+   }
 .footer__subscribe-btn {
   background-color:$blue;
  color:#fff;
@@ -77,13 +68,9 @@
   justify-content: space-between;
   padding:60px 0;
 }
-.footer__info-column {
-}
 .footer__info-title {
   color:#fff;
   margin-bottom: 20px;
-}
-.footer__info-contacts {
 }
 .footer__info-contacts-item {
 max-width: 200px;
@@ -92,12 +79,6 @@ width: 100%;
 .footer__info-contacts-item +
 .footer__info-contacts-item {
 margin-top: 20px;
-}
-.footer__info-adress {
-}
-.footer__info-email {
-}
-.footer__info-tel {
 }
 a[class^="footer__info-social"]{
   width: 40px; 
@@ -116,43 +97,28 @@ a[class^="footer__info-social"]{
 .footer__info-social-pinterest {
   background: url('../img/footer/css_sprites.png') -49px -3px;
 }
-.footer__info-useful {
-}
 .footer__info-useful-item {
   margin-bottom: 5px;
 }
-.footer__info-useful-link {
-}
-.footer__info-work {
-
-}
-.footer__info-work-day {  
+.footer__info-work-item {  
   width: 235px;
-  // width: 100%;
   margin-bottom:10px;
-  text-align: justify;
-  span{
-    margin:0 30px;
+  display:flex;
+  justify-content: space-between;
   }
+.footer__info-work-day,
+.footer__info-work-time{
+  display:inline-block;
+  max-width: 33.3%;
+  width: 100%;
 }
+
 .footer__info-map {
   border-radius:40px;
-}
-.footer__navigation-wrap {
 }
 .footer__navigation-copy {
   display: flex;
   justify-content: space-between;
-}
-.footer__navigation-wrap {
- 
-
-}
-// .footer__navigation {
-//   display: flex;
-// }
-.footer__navigation-list {
- 
 }
 .footer__navigation-item {
   display:inline;
