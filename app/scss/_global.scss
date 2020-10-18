@@ -71,7 +71,14 @@ body {
   margin: 0 auto;
  }
  h3[class$="title"]{
-   font-size: 2em;
+   font-size: 3.428em;
    color:$blue;
    font-family: "Poppins-Light", sans-serif;
  }
+
+ h4[class$="title"]{
+  font-size: 2.2857em;
+  color:inherit;
+  font-family: "Poppins-Light", sans-serif;
+  text-align: center;
+}

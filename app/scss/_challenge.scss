@@ -1,0 +1,31 @@
+.challenge {
+}
+.challenge__wrap {
+  @extend .container-fluid;
+  background-color:#f8f7fc;
+  padding:240px 0 190px 0;
+}
+
+.challenge__inner {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin-left: 182px;
+
+}
+.challenge__title {
+  margin-bottom: 15px;
+}
+.challenge__text {
+  font-family: "Lato-Regular",sans-serif;
+  margin-bottom: 45px;
+  max-width: 450px;
+  width: 100%;
+  overflow: hidden;
+  max-height: 120px;
+
+}
+.challenge__btn {
+  @extend .header__btn-start;
+  max-width: 213px;
+}

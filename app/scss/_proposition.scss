@@ -23,15 +23,12 @@
 }
 .proposition__galery {
   display:grid;
-  
-}
-.proposition__galery-item-1 {
-}
-.proposition__galery-item-2 {
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap:30px;
+
 }
 .proposition__galery-item-3 {
 }
 .proposition__galery-item-4 {
-}
-.proposition__galery-item-5 {
+  grid-area:2/1/3/3;
 }
