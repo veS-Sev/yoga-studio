@@ -1,31 +1,49 @@
 .challenge {
+  padding-top: 70px;
+  position: relative;
 }
 .challenge__wrap {
   @extend .container-fluid;
-  background-color:#f8f7fc;
-  padding:240px 0 190px 0;
+  background-color: #f8f7fc;
+  padding: 230px 0 190px 0;
 }
-
+.challenge__inner-wrap {
+  width: 100%;
+  height: 100%;
+}
 .challenge__inner {
   max-width: 500px;
   width: 100%;
-  text-align: center;
   margin-left: 182px;
-
+  min-height: 260px;
+}
+.challenge__inner::before {
+  content: "";
+  position: absolute;
+  height: 750px;
+  width: 300px;
+  left: 60%;
+  top: 0;
+  background-image: url("../img/challenge/challenge-background.png");
+  background-repeat: no-repeat;
+  background-position: 65%;
 }
 .challenge__title {
   margin-bottom: 15px;
 }
 .challenge__text {
-  font-family: "Lato-Regular",sans-serif;
+  font-family: "Lato-Regular", sans-serif;
+  color: $tblue2;
   margin-bottom: 45px;
   max-width: 450px;
   width: 100%;
   overflow: hidden;
   max-height: 120px;
-
+  font-size: 1.5em;
+  line-height: 36px;
 }
 .challenge__btn {
   @extend .header__btn-start;
+  font-size: 0.8571em;
   max-width: 213px;
 }
