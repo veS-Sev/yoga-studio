@@ -16,3 +16,13 @@ $ultrablue:#4c77eb;
   max-width: 100%;
   width: 100%;
 }
+@mixin bgr{
+  background-repeat:no-repeat;
+  background-size:cover;
+  }
+
+  @mixin img{
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
+  }

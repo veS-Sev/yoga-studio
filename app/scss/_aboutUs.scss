@@ -1,0 +1,127 @@
+.aboutUs {
+  padding: 130px 0;
+}
+.aboutUs__text-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.aboutUs__text {
+  max-width: 530px;
+  width: 100%;
+  max-height: 350px;
+}
+.aboutUs__text-item {
+}
+.aboutUs__text-item + .aboutUs__text-item {
+  margin-top: 30px;
+}
+.aboutUs__text-img {
+  margin-top: -180px;
+  display: block;
+  margin-right: -5px;
+}
+
+.aboutUs__quote {
+  @extend .container-fluid;
+  background-image: url("../img/aboutUs/aboutUs-quote-bgr.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  padding: 160px 0 100px 0;
+}
+.aboutUs__quote-inner {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 650px;
+}
+.aboutUs__quote-text {
+  font-size: 1.7143em;
+  font-family: "DroidSerif-Italic";
+  margin-bottom: 40px;
+  line-height: 36px;
+}
+.aboutUs__quote-name {
+  font-family: "Poppins-Medium", sans-serif;
+}
+
+.aboutUs__articles {
+  padding: 120px 0 100px 0;
+}
+.aboutUs__articles-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -30px;
+}
+
+.aboutUs__articles-item {
+  flex-basis: calc(33.3333% - 30px);
+  margin-left: 30px;
+}
+.aboutUs__articles-item-img {
+  display: block;
+  @include img;
+  max-width: 370px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.aboutUs__articles-item-title {
+  font-size: 1.2857em;
+  color: $blue;
+  font-family: "Poppins-Medium", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.aboutUs__articles-item-text {
+}
+.aboutUS__feedback {
+}
+.aboutUS__feedback-wrap {
+  background-color:#e5eaf7;
+  padding:120px 0 100px 0;
+}
+.container {
+}
+.aboutUS__feedback-swiper {
+}
+.swiper-wrapper {
+}
+.aboutUS__feedback-swiper-item {
+ 
+  // max-width: 580px;
+  // width: 580px;
+  // width: 100%;
+}
+.swiper-slide {
+}
+.aboutUS__feedback-swiper-item-box{
+  text-align: center;
+  color:$tblue;
+  margin:0 auto;
+  margin-bottom: 28px;
+
+}
+.aboutUS__feedback-swiper-item-title {
+  font-family: "Poppins-SemiBold",sans-serif;
+  font-size: 1.143em;
+  color:$blue;
+}
+.aboutUS__feedback-swiper-item-text {
+  margin:0 auto;
+
+}
+.aboutUS__feedback-swiper-item-img {
+  border-radius:50%;
+}
+.aboutUS__feedback-swiper-item-name {
+  font-family: "Poppins-SemiBold",sans-serif;
+}
+.aboutUS__feedback-swiper-item-prof {
+  font-size: 0.857em;
+}
+.swiper-pagination{
+
+position:static;
+}
