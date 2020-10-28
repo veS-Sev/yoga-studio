@@ -1,0 +1,73 @@
+.pricing__page-subtitle{
+  max-width: 390px;
+  overflow: hidden;
+}
+
+.pricing__class {
+  
+}
+.container {
+}
+.pricing__class-inner {
+  display:flex;
+  justify-content: space-between;
+  padding:159px 0;
+  margin-left:-50px;
+}
+.pricing__class-item {
+  max-width: 250px;
+  flex-basis: calc(25% - 50px);
+  margin-left: 50px;;
+}
+.pricing__class-item-price {
+  font-size: 2.57em;
+  color:$blue;
+  margin-bottom: 60px;
+}
+.pricing__item-price-class {
+  font-size: 14px;
+  color:#999;
+}
+.pricing__class-item-title {
+  font-family: "Poppins-Regular",sans-serif;
+  text-transform: uppercase;
+  color:$blue;
+  margin-bottom: 20px;
+ 
+}
+.pricing__class-item-text {
+  margin-bottom: 70px;
+}
+.pricing__class-item-btn {
+ @extend .header__btn-start;
+ border:none;
+ margin-bottom: 140px;
+}
+
+
+.pricing__challenge {
+  color:$blue;
+  
+}
+.pricing__challenge-wrap {
+  background-image:url('../img/pricing/pricing-bgr.jpg');
+  @include bgr;
+  padding:170px 0 330px 0;
+}
+.container {
+}
+.pricing__challenge-inner {
+  max-width: 500px;
+  width: 100%;
+}
+.pricing__challenge-title {
+  margin-bottom: 20px;
+}
+.pricing__challenge-text {
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+.pricing__challenge-btn {
+  @extend .header__btn-start;
+  max-width: 210px;
+}

@@ -10,8 +10,6 @@
   width: 100%;
   max-height: 350px;
 }
-.aboutUs__text-item {
-}
 .aboutUs__text-item + .aboutUs__text-item {
   margin-top: 30px;
 }
@@ -74,46 +72,34 @@
   margin-bottom: 20px;
   font-weight: 500;
 }
-.aboutUs__articles-item-text {
-}
-.aboutUS__feedback {
-}
-.aboutUS__feedback-wrap {
+
+.aboutUS__feedback-count-wrap{
+  @extend .container-fluid;
   background-color:#e5eaf7;
   padding:120px 0 100px 0;
+  color:$tblue;
 }
-.container {
-}
-.aboutUS__feedback-swiper {
-}
-.swiper-wrapper {
-}
-.aboutUS__feedback-swiper-item {
- 
-  // max-width: 580px;
-  // width: 580px;
-  // width: 100%;
-}
-.swiper-slide {
-}
+
 .aboutUS__feedback-swiper-item-box{
   text-align: center;
-  color:$tblue;
   margin:0 auto;
   margin-bottom: 28px;
-
+  max-width: 580px;
+  background-color:#e5eaf7;
 }
 .aboutUS__feedback-swiper-item-title {
   font-family: "Poppins-SemiBold",sans-serif;
+  font-weight: 600;
   font-size: 1.143em;
   color:$blue;
 }
 .aboutUS__feedback-swiper-item-text {
   margin:0 auto;
-
+  margin-bottom: 25px;
 }
 .aboutUS__feedback-swiper-item-img {
   border-radius:50%;
+  margin-bottom: 20px;
 }
 .aboutUS__feedback-swiper-item-name {
   font-family: "Poppins-SemiBold",sans-serif;
@@ -122,6 +108,40 @@
   font-size: 0.857em;
 }
 .swiper-pagination{
-
 position:static;
+margin-bottom: 90px;
 }
+.swiper-pagination-bullet{
+background-color:#ced8f5;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color:$blue; 
+}
+.aboutUS__count {
+}
+.aboutUS__count-inner {
+  display:flex;
+  justify-content: space-between;
+}
+.aboutUS__count-box {
+  text-align: center;
+}
+.aboutUS__count-number {
+  color:$blue;
+  font-size: 3em;
+  margin-bottom: 20px;
+  
+}
+.aboutUS__count-decryption {
+  color:#99aade;
+}
+
+.aboutUS__proposition{
+  padding:120px 0 115px 0;
+  .proposition__btn{
+    margin-bottom:0px;
+  }
+}
+
+
