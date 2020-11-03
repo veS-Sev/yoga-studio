@@ -1,0 +1,68 @@
+.swiper__background-wrap {
+  background-image: url("../img/sections/sections-background.jpg");
+  background-color: rgba($lgray, 0.7);
+  padding: 120px 0 110px 0;
+  position: relative;
+}
+.swiper__background-wrap::before {
+  width: 135px;
+  height: 112px;
+  background-image: url("../img/flower/flower-small.png");
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.swiper__inner {
+  @extend .classes__inner;
+  flex-wrap:nowrap;
+  }
+// .sections__content {
+// @extend .classes__content;
+//  }
+// .sections__content-img {
+// @extend .classes__content-img;
+
+// }
+// .sections__content-title {
+//   @extend .classes__content-title;
+// }
+// .sections__content-items {
+// @extend .classes__content-items;
+//  }
+// .sections__content-text {
+//   @extend .classes__content-text;
+//  }
+
+.swiper__button-wrap {
+  max-width: 1265px;
+  margin: 0 auto;
+  position: relative;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 35%;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 900;
+  width: 10px;
+  height: 15px;
+}
+.swiper-button-prev::after {
+  color: $blue;
+}
+.swiper-button-next::after {
+  color: #bbbbbb;
+}

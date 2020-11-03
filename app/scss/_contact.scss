@@ -1,17 +1,35 @@
-.contact__page-title-wrap {
+.contact__page-title-wrap{
+  position:relative;
+  z-index:9;
 }
-.contact__top-title-inner {
-}
-.contact__page-title {
+.contact__page-title-wrap::after{
+  position:absolute;
+  width: 662px;
+  height: 915px;
+ 
+  bottom:-100%;
+left:50%;
+  content:"";
+  z-index:2;
+  
+
 }
 .contact__page-subtitle {
   max-width: 400px;
   max-height: 90px;
 }
 .contact__inner {
+  background-image:url('../img/flower/flower-big.jpg');
+  background-repeat:no-repeat;
+  background-position:top;
   padding: 120px 0;
-  // background-color:#fff;
-}
+  position:relative;
+  
+  z-index:3;
+  .container{
+    position:relative;
+  }
+ }
 .contact__inner-wrap {
   display: flex;
   justify-content: space-between;
@@ -22,7 +40,7 @@
   max-height: 450px;
   flex-wrap: wrap;
   display:flex;
-  // margin-left:-30px;
+ 
 }
 .contact__form-input {
   border: 1px solid rgb(238, 238, 238);
@@ -74,28 +92,46 @@ textarea.contact__form-input{
     justify-content: space-between;
   }
 }
-.swiper-wrapper {
+.contact__swiper-pagination{
+  position: absolute;
+  right:-25px;
+  transform: rotate(90deg);
+  top:25%;
+  .swiper-pagination-bullet{
+      background-color:#e3e9fb;
+  }
+  .swiper-pagination-bullet+.swiper-pagination-bullet{
+    margin-left:7px;
+    background-color:#e3e9fb;
+  }
+  .swiper-pagination-bullet-active{
+    background-color:$blue;
+}
 }
 .contact__maps-item {
   background-color:#fff;
 }
 .contact__maps-item-map {
+  margin-bottom: 20px;
 }
 .contact__maps-item-box {
   max-width: 270px;
   width: 100%;
 }
 .contact__maps-item-title {
-  font-family: "Poppins-SemiBold";
+  font-family: "Poppins-SemiBold",sans-serif;
   font-weight: 600;
   color: #000;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
-.contact__maps-item-adress {
+.contact__maps-item-list{
   font-family: "Poppins-Regular";
-  font-size: 1.12667em;
+  font-size: 0.8571em;
+  max-height: 110px;
 }
-.contact__maps-item-mail {
+.contact__maps-item-row+.contact__maps-item-row{
+  margin-top: 10px;
 }
 .contact__maps-item-tel {
+  color:$blue;
 }

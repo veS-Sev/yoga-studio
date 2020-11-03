@@ -4,16 +4,18 @@
 @import "fonts";
 @import "global";
 
-// index.html
+// style for all pages
 @import "header";
-@import "top-banner";
-@import "everyone";
-@import "clases";
-@import "proposition";
-@import "teachers";
-@import "challenge";
-@import "brands";
 @import "footer";
+
+// index.html
+@import "index/top-banner";
+@import "index/everyone";
+@import "index/swiper";
+@import "index/proposition";
+@import "index/teachers";
+@import "index/challenge";
+@import "index/brands";
 
 // style for aboutUs.html
 @import "aboutUs";
@@ -23,4 +25,14 @@
 
 // style for contact.html
 @import "contact";
+
+
+// style for class.html
+@import "class";
+
+
+// style for classes.html
+
+@import "classes";
+
 @import "media";

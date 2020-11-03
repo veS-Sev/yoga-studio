@@ -25,7 +25,7 @@ $(function () {
   var swiper = new Swiper('.contact__maps-swiper', {
     slidesPerView: 1,
     effect: 'fade',
-    // direction: 'vertical',
+    direction: 'vertical',
     freeMode: true,
     pagination: {
       el: '.contact__swiper-pagination',
@@ -61,8 +61,28 @@ $(function () {
     }
   });
 
+  var $filterSelect = $('#selectTypes'),
+    $selectInstructors = $('#selectInstructors'),
+    $selectDuration = $('#selectDuration'),
+    $selectLevel = $('#selectLevel'),
+    $classes = $('#classes__inner');
 
+  $classes.mixItUp();
 
+  $filterSelect.on('change', function () {
+    $classes.mixItUp('filter', this.value);
+  });
 
+  $selectInstructors.on('change', function () {
+    $classes.mixItUp('filter', this.value);
+  });
+
+  $selectDuration.on('change', function () {
+    $classes.mixItUp('filter', this.value);
+  });
+
+  $selectLevel.on('change', function () {
+    $classes.mixItUp('filter', this.value);
+  });
 
 });

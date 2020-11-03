@@ -1,4 +1,4 @@
-// цвета для фонов
+// colors for backgrounds
 $blue:#7492ec;
 $lblue:#dfe5f2;
 $lblue2:#dae1f2;
@@ -6,11 +6,13 @@ $lgray:#f1f3f8;
 $dgray:#333333;
 $black:#181818;
 
-// цвета для текста
+// colors for text
 $text:#666666;
 $tblue:#99aade;
 $tblue2:#8ea2dc;
 $ultrablue:#4c77eb;
+
+
 
 @mixin w100 {
   max-width: 100%;
@@ -25,4 +27,7 @@ $ultrablue:#4c77eb;
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.05);
+  }
+  @mixin png{
+    padding:120px 0;
   }

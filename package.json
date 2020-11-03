@@ -20,7 +20,6 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1",
     "swiper": "^6.3.3"
   }
 }
