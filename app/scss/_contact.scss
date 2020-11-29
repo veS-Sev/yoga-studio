@@ -2,29 +2,17 @@
   position:relative;
   z-index:9;
 }
-.contact__page-title-wrap::after{
-  position:absolute;
-  width: 662px;
-  height: 915px;
- 
-  bottom:-100%;
-left:50%;
-  content:"";
-  z-index:2;
-  
-
-}
 .contact__page-subtitle {
   max-width: 400px;
   max-height: 90px;
 }
 .contact__inner {
-  background-image:url('../img/flower/flower-big.jpg');
+  background-image:url('../img/flower/flower-big-top.jpg');
   background-repeat:no-repeat;
   background-position:top;
-  padding: 120px 0;
-  position:relative;
-  
+  background-position-x:75%;
+  padding: 500px 0;
+  margin-top: -380px;
   z-index:3;
   .container{
     position:relative;
@@ -104,7 +92,7 @@ textarea.contact__form-input{
     margin-left:7px;
     background-color:#e3e9fb;
   }
-  .swiper-pagination-bullet-active{
+  .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background-color:$blue;
 }
 }

@@ -20,6 +20,13 @@
               <div class="header__logo-text">Yoga Studio</div>
             </a>
             <div class="header__navigation-wrap">
+              <div class="header__navigation-btn">
+                <div class="header__navigation-btn-line"></div>
+                <div class="header__navigation-btn-line"></div>
+                <div class="header__navigation-btn-line"></div>
+                <div class="header__navigation-btn-line"></div>
+                <div class="header__navigation-btn-line"></div>
+              </div>
               <nav class="header__navigation">
                 <ul class="header__navigation-list">
                   <li class="header__navigation-item"><a href="#" class="header__navigation-link active">Home</a></li>
@@ -45,23 +52,23 @@
         <div class="container">
           <main class="classes__filter-wrapper">
             <div class="classes__filter-selects">
-              <select name="selectTypes" id="selectTypes" class="filter-types">
+              <select name="selectTypes" id="selectTypes" class="filter-types classes__filter-select">
                 <option data-filter="all" value>Class Types</option>
                 <option data-filter=".dynamic" value=".dynamic">Dynamic</option>
                 <option data-filter=".static" value=".static">Static</option>
               </select>
-              <select name="selectInstructors" id="selectInstructors" class="filter-instructors">
+              <select name="selectInstructors" id="selectInstructors" class="filter-instructors classes__filter-select">
                 <option value> All Instructors </option>
                 <option value=".simon">Simon Park</option>
                 <option value=".klarisa">Klarisa Pink</option>
                   </select>
-              <select name="selectDuration" id="selectDuration" class="filter-duration ">
+              <select name="selectDuration" id="selectDuration" class="filter-duration classes__filter-select ">
                 <option value>Duration </option>
                 <option value=".morning">Morning</option>
                 <option value=".day">Day</option>
                 <option value=".evening">Evening</option>
               </select>
-              <select name="selectLevel" id="selectLevel" class="filter-level">
+              <select name="selectLevel" id="selectLevel" class="filter-level classes__filter-select">
                 <option value>Level </option>
                 <option value=".advanced">Advanced</option>
                 <option value=".beginners"> beginners</option>

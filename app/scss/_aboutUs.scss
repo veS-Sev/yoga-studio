@@ -1,63 +1,63 @@
-.aboutUs {
+.aboutus {
   padding: 130px 0;
 }
-.aboutUs__text-wrap {
+.aboutus__text-wrap {
   display: flex;
   justify-content: space-between;
 }
-.aboutUs__text {
+.aboutus__text {
   max-width: 530px;
   width: 100%;
   max-height: 350px;
 }
-.aboutUs__text-item + .aboutUs__text-item {
+.aboutus__text-item + .aboutus__text-item {
   margin-top: 30px;
 }
-.aboutUs__text-img {
+.aboutus__text-img {
   margin-top: -180px;
   display: block;
   margin-right: -5px;
 }
 
-.aboutUs__quote {
+.aboutus__quote {
   @extend .container-fluid;
-  background-image: url("../img/aboutUs/aboutUs-quote-bgr.jpg");
+  background-image: url("../img/aboutus/aboutus-quote-bgr.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 400px;
   padding: 160px 0 100px 0;
 }
-.aboutUs__quote-inner {
+.aboutus__quote-inner {
   color: #fff;
   text-align: center;
   margin: 0 auto;
   max-width: 650px;
 }
-.aboutUs__quote-text {
+.aboutus__quote-text {
   font-size: 1.7143em;
   font-family: "DroidSerif-Italic";
   margin-bottom: 40px;
   line-height: 36px;
 }
-.aboutUs__quote-name {
+.aboutus__quote-name {
   font-family: "Poppins-Medium", sans-serif;
 }
 
-.aboutUs__articles {
+.aboutus__articles {
   padding: 120px 0 100px 0;
 }
-.aboutUs__articles-inner {
+.aboutus__articles-inner {
   display: flex;
   justify-content: space-between;
   margin-left: -30px;
 }
 
-.aboutUs__articles-item {
+.aboutus__articles-item {
   flex-basis: calc(33.3333% - 30px);
   margin-left: 30px;
 }
-.aboutUs__articles-item-img {
+.aboutus__articles-item-img {
   display: block;
   @include img;
   max-width: 370px;
@@ -65,7 +65,7 @@
   height: auto;
   margin-bottom: 30px;
 }
-.aboutUs__articles-item-title {
+.aboutus__articles-item-title {
   font-size: 1.2857em;
   color: $blue;
   font-family: "Poppins-Medium", sans-serif;
@@ -73,38 +73,38 @@
   font-weight: 500;
 }
 
-.aboutUS__feedback-count-wrap{
+.aboutus__feedback-count-wrap{
   @extend .container-fluid;
   background-color:#e5eaf7;
   padding:120px 0 100px 0;
   color:$tblue;
 }
 
-.aboutUS__feedback-swiper-item-box{
+.aboutus__feedback-swiper-item-box{
   text-align: center;
   margin:0 auto;
   margin-bottom: 28px;
   max-width: 580px;
   background-color:#e5eaf7;
 }
-.aboutUS__feedback-swiper-item-title {
+.aboutus__feedback-swiper-item-title {
   font-family: "Poppins-SemiBold",sans-serif;
   font-weight: 600;
   font-size: 1.143em;
   color:$blue;
 }
-.aboutUS__feedback-swiper-item-text {
+.aboutus__feedback-swiper-item-text {
   margin:0 auto;
   margin-bottom: 25px;
 }
-.aboutUS__feedback-swiper-item-img {
+.aboutus__feedback-swiper-item-img {
   border-radius:50%;
   margin-bottom: 20px;
 }
-.aboutUS__feedback-swiper-item-name {
+.aboutus__feedback-swiper-item-name {
   font-family: "Poppins-SemiBold",sans-serif;
 }
-.aboutUS__feedback-swiper-item-prof {
+.aboutus__feedback-swiper-item-prof {
   font-size: 0.857em;
 }
 .swiper-pagination{
@@ -118,24 +118,24 @@ opacity: 1;
 .swiper-pagination-bullet-active{
   background-color:$blue; 
 }
-.aboutUS__count-inner {
+.aboutus__count-inner {
   display:flex;
   justify-content: space-between;
 }
-.aboutUS__count-box {
+.aboutus__count-box {
   text-align: center;
 }
-.aboutUS__count-number {
+.aboutus__count-number {
   color:$blue;
   font-size: 3em;
   margin-bottom: 20px;
   
 }
-.aboutUS__count-decryption {
+.aboutus__count-decryption {
   color:#99aade;
 }
 
-.aboutUS__proposition{
+.aboutus__proposition{
   padding:120px 0 115px 0;
   .proposition__btn{
     margin-bottom:0px;

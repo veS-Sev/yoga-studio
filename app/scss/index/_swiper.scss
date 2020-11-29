@@ -1,5 +1,5 @@
 .swiper__background-wrap {
-  background-image: url("../img/sections/sections-background.jpg");
+  background-image: url("../img/swiper/swiper-background.jpg");
   background-color: rgba($lgray, 0.7);
   padding: 120px 0 110px 0;
   position: relative;
@@ -19,9 +19,10 @@
   @extend .classes__inner;
   flex-wrap:nowrap;
   }
-// .sections__content {
-// @extend .classes__content;
-//  }
+//   .swiper__inner{
+// .classes__content {
+// margin-bottom: 0;
+//  }}
 // .sections__content-img {
 // @extend .classes__content-img;
 

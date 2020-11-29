@@ -61,28 +61,45 @@ $(function () {
     }
   });
 
-  var $filterSelect = $('#selectTypes'),
-    $selectInstructors = $('#selectInstructors'),
-    $selectDuration = $('#selectDuration'),
-    $selectLevel = $('#selectLevel'),
-    $classes = $('#classes__inner');
+  $('.header__navigation-btn').on('click', function () {
+      $('.header__navigation').slideToggle(function(){
+ 
+      $('.top-banner > .header').css({
+        'background-color': '#dfe5f2'
+      });
+    
+     
+    });
+    // });
+
+
+    let mediaNav = document.querySelector('.header__navigation-list'),
+      newNavItems = document.querySelectorAll('.header__navigation-item'),
+      btnLogin = document.querySelector('.header__btn-login');
+
+    if (newNavItems.length <= 5) {
+      let newNavItem = document.createElement('li');
+      newNavItem.classList.add('header__navigation-item');
+      mediaNav.appendChild(newNavItem);
+    } else {}
+
+    let newLogin = document.querySelectorAll('.header__navigation-item')[5];
+    newLogin.appendChild(btnLogin);
+    // $('.header__navigation').slideToggle('slow');
+    btnLogin.style.display = "block";
+
+
+  });
+
+
+  var $classes = $('#classes__inner');
 
   $classes.mixItUp();
 
-  $filterSelect.on('change', function () {
+  $('#selectTypes, #selectInstructors, #selectDuration, #selectLevel').on('change', function () {
     $classes.mixItUp('filter', this.value);
   });
 
-  $selectInstructors.on('change', function () {
-    $classes.mixItUp('filter', this.value);
-  });
 
-  $selectDuration.on('change', function () {
-    $classes.mixItUp('filter', this.value);
-  });
-
-  $selectLevel.on('change', function () {
-    $classes.mixItUp('filter', this.value);
-  });
 
 });

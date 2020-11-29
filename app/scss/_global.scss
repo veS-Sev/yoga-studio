@@ -94,9 +94,19 @@ div[class$="__page-title-wrap"]{
   @extend .container-fluid;
   background-image:url('../img/header/header-page-background.png');
   min-height: 503px;
+  @media(max-width:470px){
+    // min-height:400px;
+    background-size:cover;
+    // background-position:top left;
+  }
 }
 div[class$="__top-title-inner"]{
   margin-top:120px;
+}
+@media(max-width:1450px){
+  div[class$="__top-title-inner"]{
+      margin-left: 10%;
+  }
 }
 h1[class$="__page-title"] {
   font-family: "Poppins-Light", sans-serif;
@@ -106,6 +116,11 @@ h1[class$="__page-title"] {
   color: $ultrablue;
   margin-bottom: 10px;
   margin-top: 0;
+}
+@media(max-width:1450px){
+  h1[class$="__page-title"]{
+       font-size: 4em;
+  }
 }
 div[class$="__page-subtitle"] {
   color: #99aade;
