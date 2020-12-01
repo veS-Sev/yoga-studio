@@ -1,16 +1,22 @@
 $(function () {
 
   var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    freeMode: true,
+    slidesPerView: 1,
+    freeModeSticky: false,
+    loop: true,
 
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    },
+      prevEl: '.swiper-button-prev',
 
+    },
+    breakpoints: {
+      1201: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    }
   });
 
   var swiper = new Swiper('.aboutUS__feedback-swiper', {
@@ -62,13 +68,13 @@ $(function () {
   });
 
   $('.header__navigation-btn').on('click', function () {
-      $('.header__navigation').slideToggle(function(){
- 
+    $('.header__navigation').slideToggle(function () {
+
       $('.top-banner > .header').css({
         'background-color': '#dfe5f2'
       });
-    
-     
+
+
     });
     // });
 

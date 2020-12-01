@@ -23,10 +23,10 @@
   height: 750px;
   width: 300px;
   left: 60%;
-  top: 0;
+  top: 10px;
   background-image: url("../img/challenge/challenge-background.png");
   background-repeat: no-repeat;
-  background-position: 65%;
+  // background-position: 65%;
 }
 h3.challenge__title {
   margin-bottom: 15px;
@@ -46,4 +46,25 @@ h3.challenge__title {
   @extend .header__btn-start;
   font-size: 0.8571em;
   max-width: 213px;
+}
+@media (max-width: 1150px) {
+  .challenge__inner {
+    margin-left: 80px;
+    &::before {
+      top: 10px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .challenge__wrap {
+    padding: 180px 0 140px 0;
+  }
+  .challenge__inner {
+    margin-left: 30px;
+  }
+  .challenge__inner::before {
+    height: 650px;
+    left: 68%;
+    background-size: contain;
+  }
 }

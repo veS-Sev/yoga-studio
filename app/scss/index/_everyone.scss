@@ -1,4 +1,4 @@
-.everyone{
+
   .everyone__wrap{
     @extend .container-fluid;
     background-image:url('../img/flower/flower-big.jpg');
@@ -8,7 +8,7 @@
     min-height: 880px;
     margin-top:-100px;
   }
-}
+
 .everyone__content {
   display:flex;
   justify-content: space-between;
@@ -59,6 +59,48 @@
   font-size:1.286em;
   margin-bottom: 15px;
 }
+@media(max-width:1650px){
+  .everyone__wrap{
+    margin-top: -50px;
+  }
+}
+@media(max-width:1460px){
+  .everyone__wrap{
+    margin-top: -0px;
+  }
+  .everyone__content-inner{
+    margin-top: 60px;
+  }
+}
+@media(max-width:1200px){
+  .everyone__wrap{
+    max-height: fit-content;
+  }
+  .everyone__content{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h3.everyone__content-title{
+    margin-bottom: 50px;
+  }
+  .everyone__content-video{
+    margin-bottom:30px;
+  }
+
+  .everyone__content-items{
+    width:75%;
+    margin-bottom: 60px;
+  
+  }
+  .everyone__content-item{
+    justify-content: center;
+  }
+  .everyone__content-item-box{
+    max-width:500px;
+  }
+  }
+  
+
 
 
  

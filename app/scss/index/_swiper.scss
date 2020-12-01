@@ -1,6 +1,7 @@
 .swiper__background-wrap {
   background-image: url("../img/swiper/swiper-background.jpg");
   background-color: rgba($lgray, 0.7);
+  background-size: cover;
   padding: 120px 0 110px 0;
   position: relative;
 }
@@ -17,25 +18,8 @@
 }
 .swiper__inner {
   @extend .classes__inner;
-  flex-wrap:nowrap;
-  }
-//   .swiper__inner{
-// .classes__content {
-// margin-bottom: 0;
-//  }}
-// .sections__content-img {
-// @extend .classes__content-img;
-
-// }
-// .sections__content-title {
-//   @extend .classes__content-title;
-// }
-// .sections__content-items {
-// @extend .classes__content-items;
-//  }
-// .sections__content-text {
-//   @extend .classes__content-text;
-//  }
+  flex-wrap: nowrap;
+}
 
 .swiper__button-wrap {
   max-width: 1265px;
@@ -66,4 +50,60 @@
 }
 .swiper-button-next::after {
   color: #bbbbbb;
+}
+@media (max-width: 1200px) {
+  .swiper__inner {
+    margin-left: -30px;
+    .classes__content {
+      max-width: 100%;
+      flex-basis: calc(33.333% - 30px);
+      margin-left: 30px;
+      .classes__content-img {
+        max-width: 100%;
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 40%;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 30px;
+    width: 15px;
+    height: 30px;
+  }
+  .swiper-button-next::after {
+    margin-left: -25px;
+  }
+  .swiper-button-prev::after {
+    margin-right: -25px;
+  }
+}
+@media (max-width: 760px) {
+  .swiper__inner {
+    .classes__content {
+      flex-basis: calc(50% - 30px);
+    }
+  }
+}
+@media (max-width: 580px) {
+  .swiper {
+    .container {
+      padding: 0;
+    }
+  }
+  .swiper__background-wrap {
+    padding-bottom: 50px;
+  }
+  .swiper__inner {
+    margin-left: 0px;
+    .classes__content {
+      flex-basis: 100%;
+      margin-left: 0px;
+      .classes__content-box {
+        padding: 0 15px;
+      }
+    }
+  }
 }

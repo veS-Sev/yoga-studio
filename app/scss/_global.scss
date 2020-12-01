@@ -75,6 +75,7 @@ body {
 }
 h3[class$="title"] {
   font-size: 3.428em;
+  line-height: 1.25;
   color: $blue;
   font-family: "Poppins-Light", sans-serif;
   font-weight: 100;
@@ -84,6 +85,7 @@ h3[class$="title"] {
 
 h4[class$="title"] {
   font-size: 2.2857em;
+  line-height: 1.25;
   color: inherit;
   font-family: "Poppins-Light", sans-serif;
   text-align: center;
@@ -95,10 +97,8 @@ div[class$="__page-title-wrap"]{
   background-image:url('../img/header/header-page-background.png');
   min-height: 503px;
   @media(max-width:470px){
-    // min-height:400px;
     background-size:cover;
-    // background-position:top left;
-  }
+    }
 }
 div[class$="__top-title-inner"]{
   margin-top:120px;
