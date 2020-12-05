@@ -96,16 +96,22 @@ div[class$="__page-title-wrap"]{
   @extend .container-fluid;
   background-image:url('../img/header/header-page-background.png');
   min-height: 503px;
-  @media(max-width:470px){
+  @media(max-width:1080px){
+    min-height: 400px;
     background-size:cover;
-    }
-}
+  }
+ }
 div[class$="__top-title-inner"]{
   margin-top:120px;
 }
 @media(max-width:1450px){
   div[class$="__top-title-inner"]{
       margin-left: 10%;
+  }
+}
+@media(max-width:1080px){
+  div[class$="__top-title-inner"]{
+    margin-top: 60px;
   }
 }
 h1[class$="__page-title"] {
@@ -122,6 +128,7 @@ h1[class$="__page-title"] {
        font-size: 4em;
   }
 }
+
 div[class$="__page-subtitle"] {
   color: #99aade;
 }

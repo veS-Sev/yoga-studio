@@ -19,7 +19,7 @@ $(function () {
     }
   });
 
-  var swiper = new Swiper('.aboutUS__feedback-swiper', {
+  var swiper = new Swiper('.aboutus__feedback-swiper', {
     effect: 'fade',
     freeMode: true,
     pagination: {
@@ -40,7 +40,7 @@ $(function () {
   });
 
 
-  let target_block = $(".aboutUS__count-inner"); // Ищем блок 
+  let target_block = $(".aboutus__count-inner"); // Ищем блок 
   let blockStatus = true;
   console.log(target_block);
   // обычно использовалась $(window).scroll(function () {...}, но height:100%; не дает работать событию scroll, если убрать height:100%, то footer не прижимается к дну страницы при недостаточном наполнении других секций, min-height:100%; в этом деле не помогло - footer улетает, хотя scroll начинает работать. Поэтому использовала this.body
@@ -52,7 +52,7 @@ $(function () {
 
       blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
-      $('.aboutUS__count-number').each(function () {
+      $('.aboutus__count-number').each(function () {
         $(this).prop('Counter', 0).animate({
           Counter: $(this).text()
         }, {
@@ -67,6 +67,17 @@ $(function () {
     }
   });
 
+
+  $(function () {
+    if ($(window).width() < 500) {
+      // Подключаем стиль для мобильных
+      $("head").append($("<link rel='stylesheet' href='css/styleMob.css' type='text/css' media='screen' />"));
+    } else {
+      // Подключаем стиль для остальных
+      $("head").append($("<link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />"));
+    }
+  });
+
   $('.header__navigation-btn').on('click', function () {
     $('.header__navigation').slideToggle(function () {
 
@@ -76,7 +87,7 @@ $(function () {
 
 
     });
-    // });
+
 
 
     let mediaNav = document.querySelector('.header__navigation-list'),
@@ -97,6 +108,15 @@ $(function () {
 
   });
 
+
+  if ($(window).width() < 900) {
+    $(".teachers__btn").on('click', function () {
+      $('.teachers__galery').slideToggle(function () {
+        if ($(this).is(':visible'))
+          $(this).css('display', 'grid');
+      });
+    })
+  } else {};
 
   var $classes = $('#classes__inner');
 

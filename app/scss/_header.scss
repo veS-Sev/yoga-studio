@@ -54,9 +54,15 @@
   border-radius: 20px;
   text-transform: uppercase;
 }
+@media(max-width:1360px){
+  .header__navigation-wrap{
+    max-width: 70%;
+  }
+}
 @media (max-width: 1080px) {
   .header__navigation-wrap {
     justify-content: space-between;
+    // justify-content:flex-wrap;
   }
   .header__navigation {
     display: none;
@@ -117,9 +123,6 @@
 @media(max-width:700px){
   .header__logo-text {
       font-size: 1.4em;
-    }
-    .header__btn-start{
-// max-width: 170px;
     }
     a.header__logo{
      @include w100;
