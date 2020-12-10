@@ -12,6 +12,13 @@ $(function () {
 
     },
     breakpoints: {
+      580: {
+        slidesPerView: 2,
+      },
+      761: {
+        slidesPerView: 3,
+
+      },
       1201: {
         slidesPerView: 4,
         spaceBetween: 30,

@@ -52,7 +52,9 @@
   color: #bbbbbb;
 }
 @media (max-width: 1200px) {
-  .swiper__inner {
+  // 
+  .swiper__inner,
+  .class__swiper-content  {
     margin-left: -30px;
     .classes__content {
       max-width: 100%;
@@ -81,7 +83,9 @@
   }
 }
 @media (max-width: 760px) {
-  .swiper__inner {
+  // 
+  .swiper__inner,
+  .class__swiper-content  {
     .classes__content {
       flex-basis: calc(50% - 30px);
     }
@@ -96,7 +100,9 @@
   .swiper__background-wrap {
     padding-bottom: 50px;
   }
-  .swiper__inner {
+  // 
+  .swiper__inner,
+  .class__swiper-content  {
     margin-left: 0px;
     .classes__content {
       flex-basis: 100%;
