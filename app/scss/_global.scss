@@ -35,8 +35,8 @@ body {
   font-weight: 400;
   max-width: 1920px;
 }
-q{
-  display:block;
+q {
+  display: block;
 }
 // прижимаем footer к дну страницы
 * {
@@ -45,8 +45,8 @@ q{
 }
 html,
 body {
-   height: 100%; 
-    }
+  height: 100%;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -92,25 +92,25 @@ h4[class$="title"] {
   font-weight: 100;
 }
 
-div[class$="__page-title-wrap"]{
+div[class$="__page-title-wrap"] {
   @extend .container-fluid;
-  background-image:url('../img/header/header-page-background.png');
+  background-image: url("../img/header/header-page-background.png");
   min-height: 503px;
-  @media(max-width:1080px){
+  @media (max-width: 1080px) {
     min-height: 400px;
-    background-size:cover;
-  }
- }
-div[class$="__top-title-inner"]{
-  margin-top:120px;
-}
-@media(max-width:1450px){
-  div[class$="__top-title-inner"]{
-      margin-left: 10%;
+    background-size: cover;
   }
 }
-@media(max-width:1080px){
-  div[class$="__top-title-inner"]{
+div[class$="__top-title-inner"] {
+  margin-top: 120px;
+}
+@media (max-width: 1450px) {
+  div[class$="__top-title-inner"] {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 1080px) {
+  div[class$="__top-title-inner"] {
     margin-top: 60px;
   }
 }
@@ -122,10 +122,11 @@ h1[class$="__page-title"] {
   color: $ultrablue;
   margin-bottom: 10px;
   margin-top: 0;
-}
-@media(max-width:1450px){
-  h1[class$="__page-title"]{
-       font-size: 4em;
+  @media (max-width: 1450px) {
+    font-size: 4em;
+  }
+  @media (max-width: 550px) {
+    font-size: 3.6em;
   }
 }
 

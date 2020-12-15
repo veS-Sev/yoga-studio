@@ -28,7 +28,7 @@ $(function () {
 
   var swiper = new Swiper('.aboutus__feedback-swiper', {
     effect: 'fade',
-    freeMode: true,
+      freeMode: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -37,12 +37,24 @@ $(function () {
 
   var swiper = new Swiper('.contact__maps-swiper', {
     slidesPerView: 1,
+    loop: true,
     effect: 'fade',
-    direction: 'vertical',
+    direction:'horizontal',
     freeMode: true,
-    pagination: {
-      el: '.contact__swiper-pagination',
-      clickable: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+
+    },
+    breakpoints: {
+         1200: {
+        direction: 'vertical',
+        pagination: {
+          el: '.contact__swiper-pagination',
+          clickable: true,
+        },
+      
+      },
     },
   });
 
