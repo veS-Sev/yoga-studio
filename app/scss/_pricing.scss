@@ -1,60 +1,49 @@
-.pricing__page-subtitle{
+.pricing__page-subtitle {
   max-width: 390px;
   overflow: hidden;
 }
-
-.pricing__class {
-  
-}
-.container {
-}
 .pricing__class-inner {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  padding:159px 0;
-  margin-left:-50px;
+  padding: 159px 0;
+  margin-left: -50px;
 }
 .pricing__class-item {
   max-width: 250px;
   flex-basis: calc(25% - 50px);
-  margin-left: 50px;;
+  margin-left: 50px;
 }
 .pricing__class-item-price {
   font-size: 2.57em;
-  color:$blue;
+  color: $blue;
   margin-bottom: 60px;
 }
 .pricing__item-price-class {
   font-size: 14px;
-  color:#999;
+  color: #999;
 }
 .pricing__class-item-title {
-  font-family: "Poppins-Regular",sans-serif;
+  font-family: "Poppins-Regular", sans-serif;
   text-transform: uppercase;
-  color:$blue;
+  color: $blue;
   margin-bottom: 20px;
- 
 }
 .pricing__class-item-text {
   margin-bottom: 70px;
 }
 .pricing__class-item-btn {
- @extend .header__btn-start;
- border:none;
- margin-bottom: 140px;
+  @extend .header__btn-start;
+  border: none;
+  margin-bottom: 140px;
 }
-
 
 .pricing__challenge {
-  color:$blue;
-  
+  color: $blue;
 }
 .pricing__challenge-wrap {
-  background-image:url('../img/pricing/pricing-bgr.jpg');
+  background-image: url("../img/pricing/pricing-bgr.jpg");
   @include bgr;
-  padding:170px 0 330px 0;
-}
-.container {
+  padding: 170px 0 330px 0;
 }
 .pricing__challenge-inner {
   max-width: 500px;
@@ -71,4 +60,120 @@ h3.pricing__challenge-title {
 .pricing__challenge-btn {
   @extend .header__btn-start;
   max-width: 210px;
+}
+@media (max-width: 1250px) {
+  .pricing__challenge-wrap {
+    padding: 50px 0 180px 20px;
+    min-height: 500px;
+    background-size: cover;
+  }
+  .pricing__class-inner {
+    padding: 50px 0;
+  }
+  .pricing__class-item-text {
+    min-height: 100px;
+    max-height: 100px;
+  }
+  .pricing__class-item-btn {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .pricing__challenge-btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 980px) {
+  div.pricing__page-title-wrap {
+    min-height: 500px;
+  }
+  .pricing__class-inner {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    padding: 50px 0 0 30px;
+  }
+  .pricing__class-item {
+    max-width: 100%;
+    flex-basis: calc(50% - 30px);
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+  .pricing__class-item-text {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 860px) {
+  .pricing__challenge-wrap {
+    background-position: 60% bottom;
+  }
+}
+@media (max-width: 750px) {
+  h3.pricing__challenge-title {
+    width: 60%;
+  }
+  .pricing__challenge-text {
+    width: 50%;
+  }
+}
+@media (max-width: 620px) {
+  .pricing__challenge-wrap {
+    background-size: cover;
+    min-height: 300px;
+    padding: 20px 0 20px 20px;
+  }
+  h3.pricing__challenge-title {
+    width: 80%;
+  }
+  .pricing__challenge-text {
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .pricing__class-inner {
+    justify-content: center;
+    margin-left: 0px;
+    padding: 50px 0 0 20px;
+  }
+  .pricing__class-item {
+    flex-basis: 100%;
+    margin-left: 0px;
+  }
+  .pricing__class-item-price {
+    margin-bottom: 20px;
+  }
+  .pricing__class-item-btn {
+    position: static;
+    margin: 0 auto;
+  }
+  .pricing__challenge-btn {
+    position: static;
+  }
+}
+@media (max-width: 470px) {
+  .pricing__challenge-wrap {
+    background-image: none;
+    background-color: $lblue;
+    padding-left: 0px;
+  }
+  h3.pricing__challenge-title {
+    width: 100%; text-align: center;
+    font-size: 3em;
+  }
+  .pricing__challenge-text {
+    width: 100%;
+  }
+   .pricing__challenge-btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  div.pricing__page-title-wrap {
+    min-height: 600px;
+  }
+  .pricing__class-inner {
+    padding-top: 0px;
+  }
 }
