@@ -87,6 +87,9 @@ h3.pricing__challenge-title {
 @media (max-width: 980px) {
   div.pricing__page-title-wrap {
     min-height: 500px;
+     .header__navigation-list{
+       height:400px;
+     }
   }
   .pricing__class-inner {
     justify-content: space-around;
@@ -171,7 +174,11 @@ h3.pricing__challenge-title {
 
 @media (max-width: 400px) {
   div.pricing__page-title-wrap {
-    min-height: 600px;
+    min-height: 
+    600px;
+    .header__navigation-list{
+      height:460px;
+    }
   }
   .pricing__class-inner {
     padding-top: 0px;

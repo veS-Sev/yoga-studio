@@ -1,6 +1,26 @@
 .header {
-  // color: $tblue;
-  font-family: "Poppins-Bold", sans-serif;
+   font-family: "Poppins-Bold", sans-serif;
+}
+.header.fill {
+  animation-duration: 1s;
+  animation-name: banner;
+  animation-fill-mode:forwards;
+  animation-timing-function:linear;
+
+}
+@keyframes banner {
+0% {
+opacity: 0;
+  background-color: #dfe5f2;
+}
+50% {
+opacity: 0.5;
+
+}
+100% {
+opacity: 1;
+background-color: #dfe5f2;
+}
 }
 .header__container {
   display: flex;
@@ -62,13 +82,18 @@
 @media (max-width: 1080px) {
   .header__navigation-wrap {
     justify-content: space-between;
-    // justify-content:flex-wrap;
+    
   }
   .header__navigation {
     display: none;
     order: 1;
   }
-  .header__navigation-btn {
+  .header__navigation.active{
+    display:block;
+    
+  }
+  
+   .header__navigation-btn {
     margin-right: 5%;
     max-width: 40px;
     width: 100%;
@@ -90,6 +115,7 @@
     right: 0;
     margin: 0 auto;
     background-color: #dfe5f2;
+    height:320px;
   }
   .header__navigation-item {
     display: flex;
@@ -106,7 +132,7 @@
   .header__navigation-item + .header__navigation-item {
     margin-left: 0;
   }
-  .header__navigation-link,
+  a.header__navigation-link,
   .header__btn-login {
     display: block;
     text-align: center;
@@ -146,15 +172,24 @@
   }
   .header__navigation-list{
     top:130px;
+    height:280px;
   }
 }
 
-
-
+// .header__navigation-list media for each page added into same name scss page
 
 @media(min-width:500px){
   .header__btn-start{
     position: static;
     
+  }
+}
+@media (min-width: 1081px) {
+  .header__navigation {
+    display: block !important;
+  }
+  .header__btn-login{
+    margin:0 25px 0 0;
+       display:inline-block !important;
   }
 }

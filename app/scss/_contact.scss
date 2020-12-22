@@ -295,6 +295,9 @@ textarea.contact__form-input {
 @media (max-width: 380px) {
   div.contact__page-title-wrap{
     min-height: 520px;
+     .header__navigation-list{
+       height:385px;
+     }
   }
   .contact__inner{
     background-position-y:15%;

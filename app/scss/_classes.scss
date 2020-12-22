@@ -64,6 +64,13 @@ select[class^="filter"] {
     padding: 230px 0 45px;
   }
 }
+@media (max-width: 1080px) {
+  .classes__page-title-wrap {
+    .header__navigation-list {
+      height: 350px;
+    }
+  }
+}
 @media (max-width: 580px) {
   .classes__filter-selects {
     margin: 20px 0;
@@ -75,11 +82,17 @@ select[class^="filter"] {
     justify-content: center;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 500px) {
+  div.classes__page-title-wrap {
+    .header__navigation-list {
+    height: 280px;
+  }
+}
   .classes__filter-wrapper {
     background-image: none;
     margin-top: 0;
     padding-top: 0;
+    
   }
 }
 @media (max-width: 430px) {

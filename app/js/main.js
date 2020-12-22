@@ -28,7 +28,7 @@ $(function () {
 
   var swiper = new Swiper('.aboutus__feedback-swiper', {
     effect: 'fade',
-      freeMode: true,
+    freeMode: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -39,7 +39,7 @@ $(function () {
     slidesPerView: 1,
     loop: true,
     effect: 'fade',
-    direction:'horizontal',
+    direction: 'horizontal',
     freeMode: true,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -47,13 +47,13 @@ $(function () {
 
     },
     breakpoints: {
-         1200: {
+      1200: {
         direction: 'vertical',
         pagination: {
           el: '.contact__swiper-pagination',
           clickable: true,
         },
-      
+
       },
     },
   });
@@ -97,17 +97,19 @@ $(function () {
     }
   });
 
-  $('.header__navigation-btn').on('click', function () {
-    $('.header__navigation').slideToggle(function () {
 
-      $('.top-banner > .header').css({
-        'background-color': '#dfe5f2'
-      });
+  let menuBtn = document.querySelector('.header__navigation-btn'),
+    menuMenu = document.querySelector('.header__navigation'),
+    header = document.querySelector('.header');
 
-
-    });
-
-
+  menuBtn.addEventListener('click', function () {
+    if (menuMenu.classList.contains('active')) {
+      menuMenu.classList.remove('active');
+      header.classList.remove('fill');
+    } else {
+      menuMenu.classList.add('active');
+      header.classList.add('fill');
+    }
 
     let mediaNav = document.querySelector('.header__navigation-list'),
       newNavItems = document.querySelectorAll('.header__navigation-item'),
@@ -121,7 +123,7 @@ $(function () {
 
     let newLogin = document.querySelectorAll('.header__navigation-item')[5];
     newLogin.appendChild(btnLogin);
-    // $('.header__navigation').slideToggle('slow');
+
     btnLogin.style.display = "block";
 
 
